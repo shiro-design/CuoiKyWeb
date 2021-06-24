@@ -119,13 +119,13 @@
 					$check_cart = $ct->check_cart();
 					if(Session::get('customer_id')==true && $check_cart){ 
 					?>
-						<a href="cus/payment.php"> Thanh toán</a>
+						<a href="payment.php"> Thanh toán</a>
 					
 					</div>
 					<?php
 					}else{ 
 					?>
-						<a class="muahang" style="text-align: right;" href="cus/login.php"> Mua hàng</a>
+						<a class="muahang" style="text-align: right;" href="login.php"> Mua hàng</a>
 					<?php
 					} 
 					?>
