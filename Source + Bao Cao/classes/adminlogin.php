@@ -46,7 +46,7 @@
 					header('Location:index.php');
 
 				}else{
-					$alert = "User and Pass not match";
+					$alert = "User and Password not match";
 					return $alert;
 				}
 			}

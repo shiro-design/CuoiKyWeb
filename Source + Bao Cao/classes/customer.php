@@ -75,10 +75,10 @@
 					$query = "INSERT INTO tbl_customer(name,city,zipcode,email,address,country,phone,password) VALUES('$name','$city','$zipcode','$email','$address','$country','$phone','$password')";
 					$result = $this->db->insert($query);
 					if($result){
-						$alert = "<span class='success'>Customer Created Successfully</span>";
+						$alert = "<span class='success'>Tạo thành công</span>";
 						return $alert;
 					}else{
-						$alert = "<span class='error'>Customer Created Not Successfully</span>";
+						$alert = "<span class='error'>Không thành công</span>";
 						return $alert;
 					}
 				}

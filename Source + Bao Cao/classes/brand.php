@@ -25,16 +25,16 @@
 			$brandName = mysqli_real_escape_string($this->db->link, $brandName);
 			
 			if(empty($brandName)){
-				$alert = "<span class='error'>Brand must be not empty</span>";
+				$alert = "<span class='error'>Thương hiệu không để trống nha</span>";
 				return $alert;
 			}else{
 				$query = "INSERT INTO tbl_brand(brandName) VALUES('$brandName')";
 				$result = $this->db->insert($query);
 				if($result){
-					$alert = "<span class='success'>Insert Brand Successfully</span>";
+					$alert = "<span class='success'>Thêm thương hiệu thành công</span>";
 					return $alert;
 				}else{
-					$alert = "<span class='error'>Insert Brand Not Success</span>";
+					$alert = "<span class='error'>Không thành công</span>";
 					return $alert;
 				}
 			}
@@ -72,16 +72,16 @@
 			$id = mysqli_real_escape_string($this->db->link, $id);
 
 			if(empty($brandName)){
-				$alert = "<span class='error'>Brand must be not empty</span>";
+				$alert = "<span class='error'>Thương hiệu không được để trống</span>";
 				return $alert;
 			}else{
 				$query = "UPDATE tbl_brand SET brandName = '$brandName' WHERE brandId = '$id'";
 				$result = $this->db->update($query);
 				if($result){
-					$alert = "<span class='success'>Brand Updated Successfully</span>";
+					$alert = "<span class='success'>Cập nhật thương hiệu thành công</span>";
 					return $alert;
 				}else{
-					$alert = "<span class='error'>Brand Updated Not Success</span>";
+					$alert = "<span class='error'>Không cập nhật thành công</span>";
 					return $alert;
 				}
 			}
@@ -91,10 +91,10 @@
 			$query = "DELETE FROM tbl_brand where brandId = '$id'";
 			$result = $this->db->delete($query);
 			if($result){
-				$alert = "<span class='success'>Brand Deleted Successfully</span>";
+				$alert = "<span class='success'>Xóa thương hiệu thành công</span>";
 				return $alert;
 			}else{
-				$alert = "<span class='error'>Brand Deleted Not Success</span>";
+				$alert = "<span class='error'>Xóa thương hiệu không thành công</span>";
 				return $alert;
 			}
 			

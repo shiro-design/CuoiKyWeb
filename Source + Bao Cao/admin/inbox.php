@@ -84,7 +84,7 @@ include_once ($filepath.'/../helpers/format.php');
 							}elseif($result['status']==1){
 								?>
 								<?php
-								echo 'Shifting...';
+								echo 'Đang vận chuyển...';
 								?>
 							<?php
 							}elseif($result['status']==2){

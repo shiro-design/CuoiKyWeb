@@ -54,10 +54,10 @@
 				$query = "INSERT INTO tbl_product(productName,brandId,catId,product_desc,price,type,image) VALUES('$productName','$brand','$category','$product_desc','$price','$type','$unique_image')";
 				$result = $this->db->insert($query);
 				if($result){
-					$alert = "<span class='success'>Insert Product Successfully</span>";
+					$alert = "<span class='success'>Thêm sản phẩm thành công</span>";
 					return $alert;
 				}else{
-					$alert = "<span class='error'>Insert Product Not Success</span>";
+					$alert = "<span class='error'>Lỗi khi thêm</span>";
 					return $alert;
 				}
 			}
@@ -234,10 +234,10 @@
 				}
 				$result = $this->db->update($query);
 					if($result){
-						$alert = "<span class='success'>Product Updated Successfully</span>";
+						$alert = "<span class='success'>Cập nhật sản phẩm thành công</span>";
 						return $alert;
 					}else{
-						$alert = "<span class='error'>Product Updated Not Success</span>";
+						$alert = "<span class='error'>Lỗi khi cập nhật</span>";
 						return $alert;
 					}
 				
@@ -248,10 +248,10 @@
 			$query = "DELETE FROM tbl_product where productId = '$id'";
 			$result = $this->db->delete($query);
 			if($result){
-				$alert = "<span class='success'>Product Deleted Successfully</span>";
+				$alert = "<span class='success'>Xóa sản phẩm thành công</span>";
 				return $alert;
 			}else{
-				$alert = "<span class='error'>Product Deleted Not Success</span>";
+				$alert = "<span class='error'>Lỗi khi xóa sản phẩm</span>";
 				return $alert;
 			}
 			
