@@ -150,7 +150,7 @@
 						if($getall_category){
 							while($result_allcat = $getall_category->fetch_assoc()){
 					?>
-				     	 <li><a href="cus/productbycat.php?catid=<?php echo $result_allcat['catId'] ?>"><?php echo $result_allcat['catName'] ?></a></li>
+				     	 <li><a href="productbycat.php?catid=<?php echo $result_allcat['catId'] ?>"><?php echo $result_allcat['catName'] ?></a></li>
 				    <?php
 				    	}
 					}
