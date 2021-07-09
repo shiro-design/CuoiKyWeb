@@ -12,3 +12,10 @@ Hương dẫn cài đặt:
 Tạo cơ sở dữ liệu mới với tên Store và import file Store.sql vào.
 Di chuyển thu mục source vào htdocs.
 truy cập vào đường dẫn và thành công.
+</br>
+Acc : Admin</br>
+username: demoHCMUE</br>
+pass : admin</br>
+Acc : Khách hàng</br>
+username : demo1@gmail.com </br>
+pass: demo</br>
